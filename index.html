@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Renewable Energy and Global Warming</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="inner">
+    <h1>Renewable Energy and Global Warming</h1>
+    <nav>
+      <ul>
+        <li><a href="#opening" class="nav-link">Opening</a></li>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#problem" class="nav-link">Problem</a></li>
+        <li><a href="#solution" class="nav-link">Solution</a></li>
+        <li><a href="#possible-action" class="nav-link">Possible Action</a></li>
+        <li><a href="#action-taken" class="nav-link">Action Taken</a></li>
+        <li><a href="#conclusion" class="nav-link">Conclusion</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- Opening -->
+<section id="opening" class="reveal">
+  <h2>Opening</h2>
+  <img src="https://i.natgeofe.com/n/255c6931-5ee9-49e6-b280-3f85cca69817/01ice-sea-level.jpg" alt="Melting glaciers caused by global warming">
+  <p>
+    Global warming is one of the greatest challenges of our time. Rising temperatures, melting glaciers, and unpredictable weather patterns have already started to affect our lives. This website aims to make people aware of what global warming really is, how human actions have worsened it, and how renewable energy can become the solution that saves our planet.
+  </p>
+  <a class="btn" href="#home">Click to Continue</a>
+</section>
+
+<!-- Home -->
+<section id="home" class="reveal">
+  <h2>Home</h2>
+  <img src="https://www.aiu.edu/wp-content/uploads/2025/03/th-3.jpg" alt="Visualization of sustainable energy future">
+  <p>
+    This website explores the causes and effects of global warming, possible solutions through renewable energy, and the actions each of us can take to make a difference.
+  </p>
+</section>
+
+<!-- Problem -->
+<section id="problem" class="reveal">
+  <h2>Problem</h2>
+  <img src="https://www.musimmas.com/wp-content/uploads/2024/04/Greenhouse-Effect-Infographic-Final.jpg" alt="Visualization of greenhouse gas emissions impact">
+  <p>
+    The main cause of global warming is the excessive emission of greenhouse gases such as carbon dioxide, methane, and nitrous oxide. These gases trap heat in the atmosphere and raise the Earth's average temperature. The result is climate change, rising sea levels, droughts, and the loss of biodiversity.
+  </p>
+  <h3>Explore Causes (Click to reveal)</h3>
+  <button class="accordion-toggle" aria-expanded="false">Fossil Fuel Combustion</button>
+  <div class="accordion-panel" hidden>
+    <p>
+      Burning coal, oil, and gas for energy releases massive amounts of carbon dioxide. Power plants, vehicles, and industries are the biggest contributors. This directly increases atmospheric CO₂ and traps more heat.
+    </p>
+  </div>
+  <button class="accordion-toggle" aria-expanded="false">Deforestation</button>
+  <div class="accordion-panel" hidden>
+    <p>
+      Trees absorb carbon dioxide, but large-scale deforestation reduces the planet's ability to remove CO₂ from the air. Forest loss for urbanization and agriculture worsens climate imbalance.
+    </p>
+  </div>
+  <button class="accordion-toggle" aria-expanded="false">Industrial Emissions</button>
+  <div class="accordion-panel" hidden>
+    <p>
+      Factories release pollutants and gases during production. Industrial waste and manufacturing also add methane and nitrous oxide, further damaging the atmosphere.
+    </p>
+  </div>
+
+  <h3>Simulated CO₂ Impact</h3>
+  <input id="co2-slider" type="range" min="300" max="800" value="415">
+  <div class="progress-bar"><div class="progress-fill"></div></div>
+  <p>Projected temperature increase: <span id="temp-display">+1.1°C</span></p>
+</section>
+
+<!-- Solution -->
+<section id="solution" class="reveal">
+  <h2>Solution</h2>
+  <img src="https://www.anl.gov/sites/www/files/2020-02/Hydropower-Feature-image1600x900.jpg" alt="Solar panels, wind turbines, and hydroelectric power">
+  <p>
+    Renewable energy offers clean, reliable, and sustainable power. Unlike fossil fuels, renewables do not emit harmful gases and are constantly replenished by natural processes. Shifting to renewable energy is one of the most effective ways to slow global warming and protect the environment for future generations.
+  </p>
+  <ul>
+    <li><strong>Solar Energy:</strong> Converts sunlight into electricity using solar panels. It is affordable, long-lasting, and ideal for homes and businesses.</li>
+    <li><strong>Wind Energy:</strong> Wind turbines generate power without releasing emissions. They are especially effective in coastal and open regions.</li>
+    <li><strong>Hydro Power:</strong> Uses flowing water to produce electricity. It is renewable but must be managed carefully to avoid affecting ecosystems.</li>
+  </ul>
+  <p>
+    Renewable sources combined with efficient technology can lead us to a clean, balanced, and sustainable world.
+  </p>
+</section>
+
+<!-- Possible Action -->
+<section id="possible-action" class="reveal">
+  <h2>Possible Action</h2>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx2H3hZ0vxhyL4XvIK4JcK_V1B6oCY0YCU1Q&s.jpg" alt="Sustainable lifestyle choices and actions">
+  <ol>
+    <li>Reduce energy use at home by turning off unused lights, using efficient appliances, and supporting green power programs.</li>
+    <li>Plant trees and support afforestation drives to balance the carbon cycle.</li>
+    <li>Spread awareness among peers and communities about the benefits of renewable energy.</li>
+    <li>Support policies and companies that prioritize sustainable energy solutions.</li>
+  </ol>
+  <p>
+    Even small individual steps can create large collective change when done consistently.
+  </p>
+</section>
+
+<!-- Action Taken -->
+<section id="action-taken" class="reveal">
+  <h2>Action Taken</h2>
+   <p>
+  During the creation of this website, I focused on combining good design with functionality. I used HTML to structure the pages, CSS for styling and balance between visuals and text, and JavaScript for interactivity. I carefully followed my storyboard and made adjustments to improve layout, accessibility, and flow. My website reflects how design can raise awareness and promote fairness by educating people about global warming and clean energy.
+  </p>
+
+  <h3>User Testing Form</h3>
+  <form id="feedback-form">
+    <label>Name: <input type="text" name="name" required></label>
+    <label>Role:
+      <select name="role" required>
+        <option value="">Select</option>
+        <option>Peer</option>
+        <option>Teacher</option>
+        <option>Other</option>
+      </select>
+    </label>
+    <label>Rating (1–5): <input type="number" name="rating" min="1" max="5" required></label>
+    <label>Comments:<textarea name="comments" rows="3"></textarea></label>
+    <button type="submit" class="btn">Submit Feedback</button>
+  </form>
+  <div id="feedback-results"></div>
+</section>
+
+<!-- Conclusion -->
+<section id="conclusion" class="reveal">
+  <h2>Conclusion</h2>
+  <p>
+    Global warming is a pressing issue that requires immediate action. By understanding its causes and embracing renewable energy solutions, we can understand its effects and work towardsa a sustainable future for all. Thats what makes this website important: It cares, We care.
+  </p>
+  <h3>Sources (MLA 8)</h3>
+  <ul>
+    <li>Shahzad, Umair. "Global Warming: Causes, Effects and Solutions." <i>ResearchGate</i>, Aug. 2015, www.researchgate.net/publication/316691239_Global_Warming_Causes_Effects_and_Solutions.</li>
+    <li>"Be Bold." <i>Sustainable Energy for All (SEforAll)</i>, www.seforall.org/bebold.</li>
+    <li>Nations, United. "EnergyNow SDG7 Action Forum 2022 | United Nations." <i>United Nations</i>, 2022, www.un.org/en/energy/page/energynow-sdg7-action-forum-2022. Accessed 15 Oct. 2025.</li>
+  </ul>
+</section>
+</main>
+
+<footer>
+  © Ebrahim — Renewable Energy and Global Warming | Created for educational purposes (MYP4 FA3)
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+:root{
+  --bg:#f5fbff;
+  --accent1:#00a0cd;
+  --accent2:#00a0cd;
+  --text:#0b1220;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  font-family:system-ui,Segoe UI,Arial;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.5;
+}
+header{
+  position:sticky;top:0;
+  background:#fff;
+  border-bottom:1px solid #ddd;
+  z-index:1000;
+}
+header .inner{
+  display:flex;justify-content:space-between;align-items:center;
+  max-width:1100px;margin:auto;padding:1rem;
+}
+header h1{font-size:1.1rem;color:var(--accent1);} 
+nav ul{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;} 
+nav a{
+  text-decoration:none;color:var(--accent1);
+  padding:.4rem .6rem;border-radius:6px;font-size:.95rem;
+}
+nav a:hover,nav a.active{
+  background:linear-gradient(90deg,var(--accent1),var(--accent2));
+  color:#fff;
+}
+section{
+  max-width:1100px;margin:auto;padding:2rem 1rem;
+  border-bottom:1px solid #e3e3e3;
+}
+h2{color:var(--accent1);margin-bottom:.75rem;}
+p{margin-bottom:.75rem;}
+.btn{
+  display:inline-block;background:linear-gradient(90deg,var(--accent1),var(--accent2));
+  color:#fff;padding:.5rem 1rem;border-radius:6px;text-decoration:none;
+}
+img{width:100%;border-radius:8px;margin:.5rem 0 1rem 0;}
+footer{text-align:center;padding:1rem;font-size:.9rem;color:#555;}
+.accordion-toggle{
+  display:block;width:100%;text-align:left;
+  background:#fff;border:1px solid #ccc;
+  border-radius:6px;margin:.25rem 0;padding:.5rem .75rem;font-weight:600;
+}
+.accordion-panel{background:#f9ffff;border:1px solid #ccc;border-radius:6px;padding:.6rem;margin-bottom:.4rem;}
+form{display:grid;gap:.5rem;max-width:600px;}
+input,select,textarea{padding:.5rem;border:1px solid #ccc;border-radius:6px;}
+.progress-bar{width:100%;height:14px;background:#e0f3ee;border-radius:14px;overflow:hidden;}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--accent1),var(--accent2));width:30%;transition:width .3s;}
+.reveal{opacity:0;transform:translateY(20px);transition:all .6s ease;}
+.reveal.visible{opacity:1;transform:none;}
+@media(max-width:700px){header .inner{flex-direction:column;align-items:flex-start;}}
